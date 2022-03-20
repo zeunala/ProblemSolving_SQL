@@ -1,0 +1,9 @@
+/*
+중복 제거하기 (mysql)
+
+- 중복 제거는 DISTINCT를, NULL 제거는 IS NOT NULL을 이용하면 된다.
+* Pass/1st/00:02:54
+*/
+SELECT COUNT(DISTINCT NAME)
+FROM ANIMAL_INS
+WHERE NAME IS NOT NULL
